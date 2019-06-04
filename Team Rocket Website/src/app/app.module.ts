@@ -9,10 +9,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { HeaderComponent } from './header/header.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { MemberCardComponent } from './member-card/member-card.component';
+import { NumberComponent } from './number/number.component';
 
 const appRoutes: Routes =[
   { path: 'members-list', component: MemberListComponent },
   { path: 'welcome', component: WelcomeComponent},
+  { path: 'member/:id', component: NumberComponent},
   { path: '', redirectTo: 'welcome', pathMatch: 'full'}
 ];
 
@@ -23,6 +25,7 @@ const appRoutes: Routes =[
     HeaderComponent,
     MemberListComponent,
     MemberCardComponent,
+    NumberComponent,
   ],
   imports: [
     HttpClientModule,

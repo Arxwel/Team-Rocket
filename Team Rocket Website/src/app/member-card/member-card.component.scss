@@ -1,0 +1,28 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: url('/assets/background.png');
+    background-size:10%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  img {
+    border-radius: 50%;
+    border:5px solid red;
+    width:10%;
+  }
+  
+  .container {
+    display:inline-block;
+    padding: 2px 16px;
+    vertical-align:top;
+  }

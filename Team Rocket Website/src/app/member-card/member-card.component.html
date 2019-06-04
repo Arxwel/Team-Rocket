@@ -1,9 +1,7 @@
-<div>
-	<ul>
-		<li>
-			<img src="../../assets/avatars/{{person.avatar}}">
-			{{person.firstname}} 
-			{{person.lastname}}
-		</li>
-	</ul>
+<div class="card">
+		<img class="avatar" src="../../assets/avatars/{{person.avatar}}">
+		<div class="container">
+		  <h2><b>{{person.firstname}} </b></h2> 
+		</div>
+		<a routerLink="/member/{{person.id}}" routerLinkActive="active">Profil</a>
 </div>

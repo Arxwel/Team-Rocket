@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Member } from '../Model/member';
+import { Member } from '../model/member';
 
 @Component({
   selector: 'app-member-list',
@@ -9,17 +9,14 @@ import { Member } from '../Model/member';
 })
 
 export class MemberListComponent implements OnInit {
-	member: Member[];
-
-  constructor(private readonly http: HttpClient) { 
-  
-  }
+  member: Member[];
+  constructor(private readonly http: HttpClient) {}
 
   ngOnInit() {
-  	this.http.get("../../assets/members.json").subscribe(
+    this.http.get('../../assets/members.json').subscribe(
         data => {
-        this.member = data;
-	});
+          this.member = data as Member[];
+        });
   }
 
 }
