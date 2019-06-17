@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "firstname": "Giovanni",
+        "avatar": "Giovanni.png",
+        "function": "Le Boss",
+        "description":
+            "Giovanni was the head of Team Rocket, and served as the secretive Gym Leader of Viridian City's Gym, known officially as the Viridian Gym."
+    },
+    {
+        "id": 2,
+        "firstname": "Jessie",
+        "avatar": "Jessie.png",
+        "function": "Agent",
+        "description":
+            "Jessie is a member of Team Rocket, more specifically part of a trio with James and Meowth, that follows Ash and his friends around in the Pokémon anime, usually trying to steal Ash's Pikachu."
+    },
+    {
+        "id": 3,
+        "firstname": "James",
+        "avatar": "James.png",
+        "function": "Agent",
+        "description":
+            "James is a member of Team Rocket, more specifically part of a trio with Jessie and Meowth, that follows Ash Ketchum and his friends around in the Pokémon anime, usually trying to steal Ash's Pikachu."
+    },
+    {
+        "id": 4,
+        "firstname": "Miaouss",
+        "avatar": "Miaouss.png",
+        "function": "Pokémon Agent",
+        "description":
+            "Miaouss is a member of Team Rocket, more specifically part of a trio with Jessie and James, that follows Ash Ketchum and his friends around in the Pokémon anime, usually trying to steal Ash's Pikachu. His major difference from other Meowth, and nearly all other Pokémon, is that he can talk and walk on two legs like a human."
+    },
+    {
+        "id": 5,
+        "firstname": "Butch",
+        "avatar": "Butch.png",
+        "function": "Agent",
+        "description":
+            "Butch was a recruit in the Team Rocket Academy to become an official member of Team Rocket. During a test he took, Butch along with Cassidy and Raticate as his partners have become the top group of trainees in the Blue Team. He and his partners compete with the Red Team on catching the red-colored Snorlax. Even though neither side managed to do so, they were made into official teams."
+    },
+    {
+        "id": 6,
+        "firstname": "Cassidy",
+        "avatar": "Cassidy.png",
+        "function": "Agent",
+        "description":
+            "Cassidy was a recruit in the Team Rocket Academy to become an official member of Team Rocket. During a test she took, Cassidy along with Butch and Raticate as her partners have become the top group of trainees in the Blue Team. She and her partners compete with the Red Team on catching the red-colored Snorlax. Even though neither side managed to do so, they were made into official teams for being successful in Villains in training."
+    }
+]
