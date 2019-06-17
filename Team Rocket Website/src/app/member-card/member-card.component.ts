@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Member } from '../model/member';
+import { Router, NavigationExtras } from '@angular/router';
 
 
 @Component({
@@ -9,7 +10,15 @@ import { Member } from '../model/member';
 })
 export class MemberCardComponent implements OnInit {
   @Input() person: Member;
-  constructor() { }
+  constructor(private readonly router: Router) { }
+
+  showProfile(): void {
+    const navigationExtras: NavigationExtras = {
+      state: this.person
+    };
+    this.router.navigate(['/member/' + this.person.id], navigationExtras);
+  }
+
 
   ngOnInit() {
   }
