@@ -1,6 +1,21 @@
 <div class="card">
-		<img class="avatar" src="../../assets/avatars/{{person.avatar}}">
-		<div class="container">
-		  <h2><b>{{person.firstname}} </b><button (click)="showProfile()">Profil</button></h2> 
-		</div>
+  <div class="card-header">
+    {{ person.firstname }}
+  </div>
+  <div class="card-block">
+    <div class="card-media-block">
+      <img
+        src="assets/avatars/{{ person.avatar }}"
+        class="card-media-image"
+      />
+      <div class="card-media-description">
+        <span class="card-media-title">
+          {{ person.function }}
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <button (click)="showProfile()">Profil</button>
+  </div>
 </div>

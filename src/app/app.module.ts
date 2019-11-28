@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { MemberListComponent } from './member-list/member-list.component';
 import { MemberCardComponent } from './member-card/member-card.component';
 import { NumberComponent } from './number/number.component';
+import { ClarityModule } from '@clr/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes =[
   { path: 'members-list', component: MemberListComponent },
@@ -31,7 +33,9 @@ const appRoutes: Routes =[
     HttpClientModule,
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ClarityModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
