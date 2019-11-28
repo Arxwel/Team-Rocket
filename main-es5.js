@@ -41,7 +41,7 @@ module.exports = "<app-header></app-header>\n<router-outlet></router-outlet>"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"header-6\">\n    <div class=\"branding\">\n\t\t<img alt=\"Logo\" src=\"assets/logo-rocket.png\" />\n\t</div>\n\t<div class=\"header-nav\">\n        <a href=\"javascript://\" routerLink=\"/members-list\" routerLinkActive=\"active\" class=\"nav-link nav-text\">Membres</a>\n        <a href=\"javascript://\" routerLink=\"/welcome\" routerLinkActive=\"active\" class=\"nav-link nav-text\">Accueil</a>\n\t</div>\n</header>\n"
+module.exports = "<header class=\"header-6\">\n    <div class=\"branding\">\n\t\t<img alt=\"Logo\" src=\"/assets/logo-rocket.png\" />\n\t</div>\n\t<div class=\"header-nav\">\n        <a href=\"javascript://\" routerLink=\"/members-list\" routerLinkActive=\"active\" class=\"nav-link nav-text\">Membres</a>\n        <a href=\"javascript://\" routerLink=\"/welcome\" routerLinkActive=\"active\" class=\"nav-link nav-text\">Accueil</a>\n\t</div>\n</header>\n"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ module.exports = "<header class=\"header-6\">\n    <div class=\"branding\">\n\t\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\">\n  <div class=\"card-header\">\n    {{ person.firstname }}\n  </div>\n  <div class=\"card-block\">\n    <div class=\"card-media-block\">\n      <img\n        src=\"assets/avatars/{{ person.avatar }}\"\n        class=\"card-media-image\"\n      />\n      <div class=\"card-media-description\">\n        <span class=\"card-media-title\">\n          {{ person.function }}\n        </span>\n      </div>\n    </div>\n  </div>\n  <div class=\"card-footer\">\n    <button (click)=\"showProfile()\">Profil</button>\n  </div>\n</div>"
+module.exports = "<div class=\"card\">\n  <div class=\"card-header\">\n    {{ person.firstname }}\n  </div>\n  <div class=\"card-block\">\n    <div class=\"card-media-block\">\n      <img\n        src=\"/assets/avatars/{{ person.avatar }}\"\n        class=\"card-media-image\"\n      />\n      <div class=\"card-media-description\">\n        <span class=\"card-media-title\">\n          {{ person.function }}\n        </span>\n      </div>\n    </div>\n  </div>\n  <div class=\"card-footer\">\n    <button (click)=\"showProfile()\">Profil</button>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ module.exports = "<div *ngFor=\"let person of member; let i = index\">\n  <div *
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"desc\">\n    <img class=\"avatar\" src=\"../../assets/avatars/{{person.avatar}}\">\n    <h2>{{person.firstname}}</h2>\n    <p class=\"poste\">{{person.function}}</p>\n    <div><p>{{person.description}}</p></div>\n</div>"
+module.exports = "<div class=\"desc\">\n    <img class=\"avatar\" src=\"/assets/avatars/{{person.avatar}}\">\n    <h2>{{person.firstname}}</h2>\n    <p class=\"poste\">{{person.function}}</p>\n    <div><p>{{person.description}}</p></div>\n</div>"
 
 /***/ }),
 
@@ -380,7 +380,7 @@ var MemberListComponent = /** @class */ (function () {
     }
     MemberListComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.http.get('../../assets/members.json').subscribe(function (data) {
+        this.http.get('/assets/members.json').subscribe(function (data) {
             _this.member = data;
         });
     };
