@@ -13,7 +13,7 @@ export class MemberListComponent implements OnInit {
   constructor(private readonly http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get('../../assets/members.json').subscribe(
+    this.http.get('assets/members.json').subscribe(
         data => {
           this.member = data as Member[];
         });
