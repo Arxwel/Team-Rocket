@@ -1,11 +1,5 @@
-<div *ngFor="let person of member; let i = index">
-  <div *ngIf="i % 3 == 0" class="clr-row"> 
-	<app-member-card [person]="member[i]" class="clr-col-lg-4 clr-col-12"></app-member-card> 
-	<app-member-card [person]="member[i+1]" class="clr-col-lg-4 clr-col-12"></app-member-card>  
-	<app-member-card [person]="member[i+2]" class="clr-col-lg-4 clr-col-12"></app-member-card>  
-  </div>
-  <div>
-    
+<div class="clr-row">
+  <div *ngFor="let person of member" class="clr-col-lg-4 clr-col-12">
+    <app-member-card [person]="person"></app-member-card>
   </div>
 </div>
-<button>Ajouter un membre</button>

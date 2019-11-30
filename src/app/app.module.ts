@@ -12,11 +12,13 @@ import { MemberCardComponent } from './member-card/member-card.component';
 import { NumberComponent } from './number/number.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RocketdexComponent } from './rocketdex/rocketdex.component';
 
-const appRoutes: Routes =[
+const appRoutes: Routes = [
   { path: 'members-list', component: MemberListComponent },
   { path: 'welcome', component: WelcomeComponent},
   { path: 'member/:id', component: NumberComponent},
+  { path: 'rocketdex/:id', component: RocketdexComponent},
   { path: '', redirectTo: 'welcome', pathMatch: 'full'}
 ];
 
@@ -28,6 +30,7 @@ const appRoutes: Routes =[
     MemberListComponent,
     MemberCardComponent,
     NumberComponent,
+    RocketdexComponent,
   ],
   imports: [
     HttpClientModule,
