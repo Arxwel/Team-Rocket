@@ -18,7 +18,7 @@ const appRoutes: Routes = [
   { path: 'members-list', component: MemberListComponent },
   { path: 'welcome', component: WelcomeComponent},
   { path: 'member/:id', component: NumberComponent},
-  { path: 'rocketdex/:id', component: RocketdexComponent},
+  { path: 'rocketdex', component: RocketdexComponent},
   { path: '', redirectTo: 'welcome', pathMatch: 'full'}
 ];
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
 import { Pokemon, PokemonResponse } from '../model/pokemon';
 
 @Component({
@@ -10,11 +9,8 @@ import { Pokemon, PokemonResponse } from '../model/pokemon';
 })
 export class RocketdexComponent implements OnInit {
   pokemon: Pokemon[];
-  id: number;
   constructor(
-    private readonly route: ActivatedRoute,
     private readonly http: HttpClient) {
-    this.id = Number(this.route.snapshot.paramMap.get('id'));
     this.getPokemon().then((value) => this.pokemon = value);
   }
 
